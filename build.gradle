@@ -32,6 +32,8 @@ dependencies {
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.3'
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
     testCompile group: 'com.h2database', name: 'h2', version: '1.4.197'
+    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client' // MariaDB
+
     compile group: 'commons-validator', name: 'commons-validator', version: '1.6'
     runtimeOnly 'com.h2database:h2'
     compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
@@ -40,6 +42,8 @@ dependencies {
     implementation'com.auth0:java-jwt:3.10.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.9'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+
+    compile('org.springframework.boot:spring-boot-starter-mustache')
 }
 
 test {
